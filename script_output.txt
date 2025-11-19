@@ -1,0 +1,386 @@
+================================================================================
+SPUŠTĚNÍ EXPERIMENTŮ PRO VŠECHNY ALGORITMY
+================================================================================
+Konfigurace:
+  Dimenze (D): 30
+  Velikost populace (NP): 30
+  Max. vyhodnocení funkce (MAX_OFE): 3000
+  Počet experimentů: 30
+  Testovací funkce: 9
+
+================================================================================
+Spouštím experimenty pro funkci: Sphere
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 3.627200e+00
+    Experiment 10/30: f = 5.509936e+00
+    Experiment 20/30: f = 4.912692e+00
+    Experiment 30/30: f = 3.543860e+00
+    Mean: 4.179734e+00, Std: 9.251615e-01
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 6.483166e+01
+    Experiment 10/30: f = 1.262507e+02
+    Experiment 20/30: f = 9.417902e+01
+    Experiment 30/30: f = 6.765471e+01
+    Mean: 9.357606e+01, Std: 2.448851e+01
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 8.372548e+01
+    Experiment 10/30: f = 6.410167e+01
+    Experiment 20/30: f = 8.532758e+01
+    Experiment 30/30: f = 4.983786e+01
+    Mean: 8.099396e+01, Std: 1.678774e+01
+
+  Algoritmus: FA
+    Experiment  1/30: f = 8.977613e+00
+    Experiment 10/30: f = 3.683412e+00
+    Experiment 20/30: f = 7.246216e+00
+    Experiment 30/30: f = 7.961197e+00
+    Mean: 8.068415e+00, Std: 2.014142e+00
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 8.334307e-08
+    Experiment 10/30: f = 8.140301e-08
+    Experiment 20/30: f = 7.371055e-08
+    Experiment 30/30: f = 6.071545e-08
+    Mean: 8.957399e-08, Std: 4.875349e-08
+================================================================================
+Spouštím experimenty pro funkci: Schwefel
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 7.310236e+03
+    Experiment 10/30: f = 7.683250e+03
+    Experiment 20/30: f = 7.959359e+03
+    Experiment 30/30: f = 7.576968e+03
+    Mean: 7.513041e+03, Std: 2.375383e+02
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 7.631336e+03
+    Experiment 10/30: f = 7.509789e+03
+    Experiment 20/30: f = 6.564473e+03
+    Experiment 30/30: f = 7.061766e+03
+    Mean: 7.412099e+03, Std: 5.652878e+02
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 8.954065e+03
+    Experiment 10/30: f = 8.384859e+03
+    Experiment 20/30: f = 7.807428e+03
+    Experiment 30/30: f = 7.640807e+03
+    Mean: 8.518587e+03, Std: 5.195526e+02
+
+  Algoritmus: FA
+    Experiment  1/30: f = 1.068879e+04
+    Experiment 10/30: f = 9.047572e+03
+    Experiment 20/30: f = 9.253835e+03
+    Experiment 30/30: f = 1.038021e+04
+    Mean: 1.042054e+04, Std: 6.470863e+02
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 8.216274e+03
+    Experiment 10/30: f = 8.358910e+03
+    Experiment 20/30: f = 8.626624e+03
+    Experiment 30/30: f = 8.415513e+03
+    Mean: 8.452642e+03, Std: 4.771433e+02
+================================================================================
+Spouštím experimenty pro funkci: Rosenbrock
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 6.515131e+03
+    Experiment 10/30: f = 7.412930e+03
+    Experiment 20/30: f = 6.155338e+03
+    Experiment 30/30: f = 5.146252e+03
+    Mean: 6.831921e+03, Std: 1.746947e+03
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 2.510159e+05
+    Experiment 10/30: f = 2.873170e+05
+    Experiment 20/30: f = 1.950298e+05
+    Experiment 30/30: f = 3.257680e+05
+    Mean: 2.394676e+05, Std: 7.468217e+04
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 5.702048e+05
+    Experiment 10/30: f = 4.791730e+05
+    Experiment 20/30: f = 4.572852e+05
+    Experiment 30/30: f = 6.354811e+05
+    Mean: 5.122508e+05, Std: 1.591759e+05
+
+  Algoritmus: FA
+    Experiment  1/30: f = 8.536537e+04
+    Experiment 10/30: f = 8.733116e+04
+    Experiment 20/30: f = 6.366068e+04
+    Experiment 30/30: f = 6.549140e+04
+    Mean: 9.139336e+04, Std: 2.396353e+04
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 2.877804e+01
+    Experiment 10/30: f = 2.871578e+01
+    Experiment 20/30: f = 2.836817e+01
+    Experiment 30/30: f = 2.873168e+01
+    Mean: 2.857867e+01, Std: 1.689662e-01
+================================================================================
+Spouštím experimenty pro funkci: Rastrigin
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 2.588001e+02
+    Experiment 10/30: f = 2.421840e+02
+    Experiment 20/30: f = 2.173882e+02
+    Experiment 30/30: f = 2.339919e+02
+    Mean: 2.322301e+02, Std: 1.840532e+01
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 3.697780e+02
+    Experiment 10/30: f = 3.738249e+02
+    Experiment 20/30: f = 3.373325e+02
+    Experiment 30/30: f = 3.821270e+02
+    Mean: 3.501334e+02, Std: 3.252489e+01
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 3.017943e+02
+    Experiment 10/30: f = 3.131093e+02
+    Experiment 20/30: f = 2.998852e+02
+    Experiment 30/30: f = 2.969336e+02
+    Mean: 3.099968e+02, Std: 1.834897e+01
+
+  Algoritmus: FA
+    Experiment  1/30: f = 1.846971e+02
+    Experiment 10/30: f = 2.074259e+02
+    Experiment 20/30: f = 1.973496e+02
+    Experiment 30/30: f = 2.085436e+02
+    Mean: 2.036465e+02, Std: 1.223532e+01
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 1.166264e+02
+    Experiment 10/30: f = 1.547811e+02
+    Experiment 20/30: f = 1.570911e+02
+    Experiment 30/30: f = 1.467567e+02
+    Mean: 1.527397e+02, Std: 1.996082e+01
+================================================================================
+Spouštím experimenty pro funkci: Griewank
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 6.495688e-01
+    Experiment 10/30: f = 6.519134e-01
+    Experiment 20/30: f = 5.762328e-01
+    Experiment 30/30: f = 3.524176e-01
+    Mean: 4.582681e-01, Std: 1.516218e-01
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 1.024112e+00
+    Experiment 10/30: f = 1.045466e+00
+    Experiment 20/30: f = 1.027937e+00
+    Experiment 30/30: f = 1.020185e+00
+    Mean: 1.026492e+00, Std: 1.696397e-02
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 1.030879e+00
+    Experiment 10/30: f = 1.011845e+00
+    Experiment 20/30: f = 1.030940e+00
+    Experiment 30/30: f = 9.940581e-01
+    Mean: 1.026238e+00, Std: 1.182450e-02
+
+  Algoritmus: FA
+    Experiment  1/30: f = 4.511623e-01
+    Experiment 10/30: f = 2.939794e-01
+    Experiment 20/30: f = 3.339871e-01
+    Experiment 30/30: f = 4.928532e-01
+    Mean: 4.692248e-01, Std: 9.951408e-02
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 1.390557e-08
+    Experiment 10/30: f = 4.017700e-09
+    Experiment 20/30: f = 2.368241e-09
+    Experiment 30/30: f = 9.512024e-09
+    Mean: 6.769155e-04, Std: 3.645099e-03
+================================================================================
+Spouštím experimenty pro funkci: Levy
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 1.125897e+00
+    Experiment 10/30: f = 1.000867e+00
+    Experiment 20/30: f = 9.832853e-01
+    Experiment 30/30: f = 9.181608e-01
+    Mean: 1.064295e+00, Std: 1.669277e-01
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 7.126623e+00
+    Experiment 10/30: f = 7.580672e+00
+    Experiment 20/30: f = 7.081367e+00
+    Experiment 30/30: f = 9.873788e+00
+    Mean: 7.780748e+00, Std: 1.533076e+00
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 1.692603e+01
+    Experiment 10/30: f = 1.566465e+01
+    Experiment 20/30: f = 1.277467e+01
+    Experiment 30/30: f = 9.105000e+00
+    Mean: 1.343614e+01, Std: 3.131423e+00
+
+  Algoritmus: FA
+    Experiment  1/30: f = 1.956833e+00
+    Experiment 10/30: f = 1.871872e+00
+    Experiment 20/30: f = 2.006310e+00
+    Experiment 30/30: f = 2.115195e+00
+    Mean: 1.956596e+00, Std: 1.878365e-01
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 9.246489e-01
+    Experiment 10/30: f = 6.487973e-01
+    Experiment 20/30: f = 1.098865e+00
+    Experiment 30/30: f = 8.755229e-01
+    Mean: 9.216581e-01, Std: 1.867969e-01
+================================================================================
+Spouštím experimenty pro funkci: Michalewicz
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = -1.075863e+01
+    Experiment 10/30: f = -1.153045e+01
+    Experiment 20/30: f = -1.171081e+01
+    Experiment 30/30: f = -1.088338e+01
+    Mean: -1.145883e+01, Std: 5.461938e-01
+
+  Algoritmus: PSO
+    Experiment  1/30: f = -9.701015e+00
+    Experiment 10/30: f = -8.848296e+00
+    Experiment 20/30: f = -7.984146e+00
+    Experiment 30/30: f = -9.087089e+00
+    Mean: -8.825238e+00, Std: 1.173797e+00
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = -9.747360e+00
+    Experiment 10/30: f = -1.121813e+01
+    Experiment 20/30: f = -9.755260e+00
+    Experiment 30/30: f = -9.686736e+00
+    Mean: -9.780190e+00, Std: 6.652701e-01
+
+  Algoritmus: FA
+    Experiment  1/30: f = -9.291321e+00
+    Experiment 10/30: f = -1.000948e+01
+    Experiment 20/30: f = -1.024814e+01
+    Experiment 30/30: f = -1.089679e+01
+    Mean: -9.837341e+00, Std: 4.436853e-01
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = -1.048572e+01
+    Experiment 10/30: f = -1.089970e+01
+    Experiment 20/30: f = -1.191536e+01
+    Experiment 30/30: f = -1.192606e+01
+    Mean: -1.129678e+01, Std: 8.885871e-01
+================================================================================
+Spouštím experimenty pro funkci: Zakharov
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 1.559474e+02
+    Experiment 10/30: f = 2.052801e+02
+    Experiment 20/30: f = 2.354702e+02
+    Experiment 30/30: f = 1.912667e+02
+    Mean: 2.013239e+02, Std: 2.714027e+01
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 1.986620e+02
+    Experiment 10/30: f = 2.016658e+02
+    Experiment 20/30: f = 2.103332e+02
+    Experiment 30/30: f = 2.457193e+02
+    Mean: 2.458666e+02, Std: 4.929190e+01
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 1.363013e+02
+    Experiment 10/30: f = 1.056498e+02
+    Experiment 20/30: f = 1.503735e+02
+    Experiment 30/30: f = 1.093030e+02
+    Mean: 1.441469e+02, Std: 2.715430e+01
+
+  Algoritmus: FA
+    Experiment  1/30: f = 1.917081e+01
+    Experiment 10/30: f = 1.163531e+01
+    Experiment 20/30: f = 2.250284e+01
+    Experiment 30/30: f = 2.136026e+01
+    Mean: 1.857115e+01, Std: 3.627094e+00
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 2.701517e+01
+    Experiment 10/30: f = 4.913910e+01
+    Experiment 20/30: f = 3.712995e+01
+    Experiment 30/30: f = 4.256484e+01
+    Mean: 4.225684e+01, Std: 1.376132e+01
+================================================================================
+Spouštím experimenty pro funkci: Ackley
+================================================================================
+
+  Algoritmus: DE
+    Experiment  1/30: f = 1.016153e+01
+    Experiment 10/30: f = 1.143649e+01
+    Experiment 20/30: f = 1.008065e+01
+    Experiment 30/30: f = 9.449272e+00
+    Mean: 1.049435e+01, Std: 7.638119e-01
+
+  Algoritmus: PSO
+    Experiment  1/30: f = 1.884102e+01
+    Experiment 10/30: f = 2.008573e+01
+    Experiment 20/30: f = 2.017619e+01
+    Experiment 30/30: f = 1.922034e+01
+    Mean: 2.004861e+01, Std: 5.842916e-01
+
+  Algoritmus: SOMA
+    Experiment  1/30: f = 1.933309e+01
+    Experiment 10/30: f = 1.978868e+01
+    Experiment 20/30: f = 1.942954e+01
+    Experiment 30/30: f = 1.809614e+01
+    Mean: 1.932414e+01, Std: 3.918251e-01
+
+  Algoritmus: FA
+    Experiment  1/30: f = 1.993081e+01
+    Experiment 10/30: f = 1.996811e+01
+    Experiment 20/30: f = 1.989993e+01
+    Experiment 30/30: f = 1.984759e+01
+    Mean: 1.986675e+01, Std: 1.201554e-01
+
+  Algoritmus: TLBO
+    Experiment  1/30: f = 1.355004e-03
+    Experiment 10/30: f = 1.183071e-03
+    Experiment 20/30: f = 1.475315e-03
+    Experiment 30/30: f = 1.597832e-03
+    Mean: 1.859091e-03, Std: 6.091690e-04
+
+================================================================================
+VŠECHNY EXPERIMENTY DOKONČENY
+================================================================================
+
+Vytvářím Excel soubor: tlbo_comparison_results.xlsx
+  Vytvářím tabulku pro: Sphere
+  Vytvářím tabulku pro: Schwefel
+  Vytvářím tabulku pro: Rosenbrock
+  Vytvářím tabulku pro: Rastrigin
+  Vytvářím tabulku pro: Griewank
+  Vytvářím tabulku pro: Levy
+  Vytvářím tabulku pro: Michalewicz
+  Vytvářím tabulku pro: Zakharov
+  Vytvářím tabulku pro: Ackley
+
+✓ Excel soubor vytvořen: tlbo_comparison_results.xlsx
+
+================================================================================
+HOTOVO!
+================================================================================
+
+Souhrn výsledků:
+Funkce	       Vítěz	  TLBO umístění	   
+--------------------------------------------------
+Sphere	       TLBO	         1.
+Schwefel	     PSO           3. - PSO bylo lepší
+Rosenbrock	   TLBO          1.
+Rastrigin	     TLBO          1.
+Griewank	     TLBO          1.
+Levy	         TLBO          1. - Těsně před DE
+Michalewicz	   DE            2. - DE bylo lepší
+Zakharov	     FA            2. - FA bylo lepší
+Ackley	       TLBO          1.

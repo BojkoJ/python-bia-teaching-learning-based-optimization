@@ -1,0 +1,29 @@
+Implement Teaching-Learning Based Algorithm (TLBO) for minimization
+
+• Use TLBO to find out the solution of the previously implemented functions and compare it with the following algorithms:
+    • DE, PSO, SOMA, FA
+    • Settings of parameters:
+        • D = 30
+        • NP=30
+        • number of maximal number of objective function evaluations Max_OFE = 3000
+    • Number of experiments: 30
+    • For each experiment, algorithm and objective function record the best value
+    • For each algorithm and objective function calculate the mean and standard deviation (from 30 experiments)
+    • Create the XLS file a put there all your results
+
+Expected Results:
+ - Code of TLBO in Python
+ - XLS file with 9 tables – 1 table for each test function
+
+Example of table for one test function (in raw markdown for showcase):
+
+### Sphere Function
+|                   | DE        | PSO       | SOMA | FA   | TLBO |
+| :---------------- | :-------- | :-------- | :--- | :--- | :--- |
+| Experiment 1      | Best sol. | Best sol. | ...  | ...  | ...  |
+| Experiment 2      |           |           |      |      |      |
+| Experiment 3      |           |           |      |      |      |
+| ...               |           |           |      |      |      |
+| ...               |           |           |      |      |      |
+| Experiment 30     | Best sol. | Best sol. | ...  | ...  | ...  |
+| **Mean/Std. dev** |           |           |      |      |      |
