@@ -1609,51 +1609,6 @@ def teaching_learning_based_optimization(
          - Pokud je druhý student lepší: nová pozice = stará + r * (druhý - první)
          - Pokud je první student lepší: nová pozice = stará + r * (první - druhý)
     
-    Algoritmus:
-      1. Inicializujeme populaci NP studentů (náhodné pozice v mezích)
-      2. Opakujeme dokud nevyčerpáme max_OFE vyhodnocení funkce:
-         a) TEACHER PHASE:
-            - Najdeme učitele (nejlepšího studenta)
-            - Vypočítáme průměr populace
-            - Pro každého studenta:
-              * Vytvoříme novou pozici pomocí učitele a průměru
-              * Pokud je nová pozice lepší, nahradíme jí starou
-         b) LEARNER PHASE:
-            - Pro každého studenta:
-              * Náhodně vybereme jiného studenta
-              * Vytvoříme novou pozici na základě vzájemného učení
-              * Pokud je nová pozice lepší, nahradíme jí starou
-      3. Vrátíme nejlepšího studenta (učitele)
-    
-    Klíčové vlastnosti TLBO:
-      - Žádné parametry specifické pro algoritmus (kromě NP)
-        * Není třeba ladit žádné koeficienty jako u PSO (w, c1, c2) nebo DE (F, CR)
-        * Algoritmus se sám adaptuje na problém
-      - Dvě fáze zajišťují jak globální (teacher), tak lokální (learner) prohledávání
-      - Teaching Factor (TF) je náhodně 1 nebo 2 (určuje intenzitu učení)
-    
-    Hlavní rovnice:
-      TEACHER PHASE:
-        X_new = X_old + r * (X_teacher - TF * X_mean)
-        kde:
-          X_old     = aktuální pozice studenta
-          X_teacher = pozice učitele (nejlepší student)
-          X_mean    = průměrná pozice všech studentů
-          TF        = Teaching Factor (náhodně 1 nebo 2)
-          r         = náhodné číslo z rovnoměrného rozdělení [0, 1]
-      
-      LEARNER PHASE:
-        Pokud f(X_i) < f(X_j):  X_new = X_i + r * (X_i - X_j)
-        Jinak:                  X_new = X_i + r * (X_j - X_i)
-        kde:
-          X_i, X_j  = dva náhodně vybraní studenti
-          r         = náhodné číslo z rovnoměrného rozdělení [0, 1]
-    
-    Vizualizace (jen 2D):
-      - Heatmapa cílové funkce na pozadí
-      - Cesta nejlepšího studenta (učitele) v čase
-      - Start (modrý bod), konec (zelená hvězda)
-    
     Parametry
     ---------
     objective : Callable
@@ -1677,11 +1632,6 @@ def teaching_learning_based_optimization(
     (best_position, best_fitness) : Tuple[List[float], float]
         Nejlepší nalezené řešení (nejlepší student) a jeho fitness hodnota.
     
-    Reference
-    ---------
-    Rao, R. V., Savsani, V. J., & Vakharia, D. P. (2011).
-    Teaching–learning-based optimization: a novel method for constrained mechanical design optimization problems.
-    Computer-Aided Design, 43(3), 303-315.
     """
     
     # Vytvoříme generátor náhodných čísel s daným seedem (pro reprodukovatelnost)
