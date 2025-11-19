@@ -1640,15 +1640,15 @@ def teaching_learning_based_optimization(
     # Počet dimenzí (např. pro 2D funkci je dim=2, pro zadání D=30)
     dim = len(bounds)
     
-    # Pomocná třída pro reprezentaci studenta ve třídě
-    # Každý student má pozici v prostoru řešení a fitness hodnotu (známku)
+    # Pomocná třída pro reprezentaci studenta
+    # Každý student má pozici v prostoru řešení a fitness hodnotu
     class Student:
         def __init__(self, position: List[float]):
             self.position = position  # Aktuální pozice studenta v prostoru řešení
-            self.fitness = float('inf')  # Fitness hodnota (známka) - čím nižší, tím lepší
+            self.fitness = float('inf')  # Fitness hodnota - čím nižší, tím lepší
     
     # Pomocná funkce: clamp (oříznutí) hodnoty do mezí
-    # Zajišťuje, že student nezabloudí mimo definovaný prostor
+    # Zajišťuje, že student nevyletí mimo funkci
     def clamp(value: float, low: float, high: float) -> float:
         """Ořízne hodnotu do intervalu [low, high]."""
         if value < low:
@@ -1658,7 +1658,7 @@ def teaching_learning_based_optimization(
         else:
             return value
     
-    # 1) Inicializace populace studentů (třídy)
+    # 1) Inicializace populace studentů
     # Vytvoříme NP studentů s náhodnými pozicemi v daných mezích
     population: List[Student] = []
     first_student_position = None  # Uložíme první pozici pro vizualizaci startu
@@ -1683,7 +1683,7 @@ def teaching_learning_based_optimization(
         student.fitness = objective(position)
         OFE_count += 1  # Započítáme vyhodnocení funkce
         
-        # Přidáme studenta do třídy (populace)
+        # Přidáme studenta do populace
         population.append(student)
         
         # Uložíme první pozici jako reprezentant počátečního stavu
@@ -1719,6 +1719,7 @@ def teaching_learning_based_optimization(
         
         # Vypočítáme průměrnou pozici všech studentů ve třídě
         # Mean = (X_1 + X_2 + ... + X_NP) / NP
+        # NP je velikost populace (počet studentů)
         mean_position = [0.0] * dim
         for student in population:
             for d in range(dim):
@@ -1730,7 +1731,7 @@ def teaching_learning_based_optimization(
         for student in population:
             # Teaching Factor (TF) - určuje intenzitu učení
             # TF je náhodně 1 nebo 2 (s rovnou pravděpodobností)
-            # TF=1 znamená silnější učení, TF=2 slabší učení
+            # TF=1 znamená silnější učení od učitele, TF=2 slabší učení od učitele 
             TF = rng.choice([1, 2])
             
             # ================================================================
@@ -1744,11 +1745,6 @@ def teaching_learning_based_optimization(
             #   X_mean    = průměrná pozice všech studentů
             #   TF        = Teaching Factor (1 nebo 2)
             #   r         = náhodné číslo [0, 1] pro každou dimenzi
-            #
-            # Intuice:
-            #   - (X_teacher - TF * X_mean) je rozdíl mezi učitelem a průměrem třídy
-            #   - Student se posouvá směrem k tomuto rozdílu
-            #   - Čím lepší učitel, tím více se studenti posouvají směrem k němu
             # ================================================================
             
             # Vytvoříme novou pozici pro studenta
@@ -1763,7 +1759,7 @@ def teaching_learning_based_optimization(
                 # Nová souřadnice podle Teacher Phase rovnice
                 new_coord = student.position[d] + r * difference_mean
                 
-                # Ošetření hranic - pokud student vylétne mimo prostor, vrátíme ho zpět
+                # Ošetření hranic - pokud student vylétne mimo prostor funkce, vrátíme ho zpět funkcí clamp
                 low, high = bounds[d]
                 new_coord = clamp(new_coord, low, high)
                 
@@ -1819,11 +1815,6 @@ def teaching_learning_based_optimization(
             # kde:
             #   X_i, X_j  = pozice dvou náhodně vybraných studentů
             #   r         = náhodné číslo [0, 1]
-            #
-            # Intuice:
-            #   - Student se učí od lepšího studenta ve dvojici
-            #   - Pokud jsem lepší, pohybuji se pryč od horšího (diverzifikace)
-            #   - Pokud jsem horší, pohybuji se směrem k lepšímu (intensifikace)
             # ================================================================
             
             # Vytvoříme novou pozici na základě vzájemného učení
